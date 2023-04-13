@@ -1,0 +1,5 @@
+(authorizations
+ (version 0)               ;current file format version
+
+ (("F4FA E402 DD26 78FA 9A38  6045 12BC 8DFE 27C1 41DC"
+   (name "Thomas Ieong"))))
