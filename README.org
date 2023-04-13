@@ -1,3 +1,24 @@
 * Guix-prolog
 
 Channel for prolog packages, for now it contains the definitions needed to build scryer-prolog v0.9.1
+
+* Installation
+
+Guix-prolog can be installed as a Guix channel.
+
+To do so, add it to ~/.config/guix/channels.scm:
+
+#+begin_src scheme
+  (cons* (channel
+	  (name 'guix-prolog)
+	  (url "https://github.com/tieong/guix-prolog")
+	  ;; Enable signature verification:
+	  (introduction
+	   (make-channel-introduction
+	    "32f667b1742a33e62866f16e39fce60b252c4802"
+	    (openpgp-fingerprint
+	     "F4FA E402 DD26 78FA 9A38  6045 12BC 8DFE 27C1 41DC"))))
+	 %default-channels)
+#+end_src
+
+Then run guix pull.
