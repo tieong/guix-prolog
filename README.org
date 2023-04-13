@@ -1,0 +1,3 @@
+* Guix-prolog
+
+Channel for prolog packages, for now it contains the definitions needed to build scryer-prolog v0.9.1
