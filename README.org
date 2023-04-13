@@ -22,3 +22,9 @@ To do so, add it to ~/.config/guix/channels.scm:
 #+end_src
 
 Then run guix pull.
+
+To install scryer-prolog run:
+
+#+begin_src sh
+  guix install scryer-prolog
+#+end_src
