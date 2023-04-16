@@ -58,3 +58,25 @@ As of 16/04/2023 Scryer Prolog has been tested on the following channels:
 	    "BBB0 2DDF 2CEA F6A8 0D1D  E643 A2A0 6DF2 A33A 54FA")))))
 #+end_src
 
+* Build Scryer Prolog
+
+To build and install Scryer with cargo in a Guix shell/Guix system:
+
+#+begin_src sh
+  mkdir ~/temphome
+
+  guix shell bash curl nss-certs gcc:lib gcc-toolchain  \
+       openssl pkg-config git sed gawk make grep \
+       gcc-toolchain zlib coreutils diffutils m4 \
+       findutils \
+       --network \
+       --container \
+       --emulate-fhs \
+       --share=$HOME/temphome=$HOME
+
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+  # Then git clone scryer or other rust projects there
+#+end_src
+
+See [[https://guix.gnu.org/de/blog/2023/the-filesystem-hierarchy-standard-comes-to-guix-containers/][this post about the guix filesystem hierarchy]]
