@@ -58,7 +58,7 @@ As of 16/04/2023, Scryer Prolog has been tested on the following channels:
 	    "BBB0 2DDF 2CEA F6A8 0D1D  E643 A2A0 6DF2 A33A 54FA")))))
 #+end_src
 
-* Build Scryer Prolog
+* Build Scryer Prolog with cargo
 
 To build and install Scryer with cargo in a Guix shell/Guix system:
 
