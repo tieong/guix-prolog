@@ -31,7 +31,7 @@ To install scryer-prolog run:
 
 ** Channels
 
-As of 16/04/2023 Scryer Prolog has been tested on the following channels:
+As of 16/04/2023, Scryer Prolog has been tested on the following channels:
 
 #+begin_src scheme
   (list (channel
